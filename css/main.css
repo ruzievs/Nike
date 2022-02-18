@@ -1,0 +1,882 @@
+* {
+    scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 0;
+    background: #000;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 5px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.book {
+    background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+}
+
+/* loader strat */
+.preloader-2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    background: url(https://images.squarespace-cdn.com/content/v1/54cd70f3e4b0b93852b9758e/1556472739075-ZDO6U5K1BSZ8UVYJMZ8I/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmoW6VMYd7DRFXOxjGuORbJVRIz_X6uKxhFE9bwG5-diIJ9kj42L3XbtP_RiBprpp_/BL_Master_logo_animation.gif-0.0000-8.9600+copy.gif) no-repeat center center /contain;
+    background-color: black;
+}
+
+.done {
+   opacity: 0;
+   visibility: hidden;
+}
+/* loader end */
+
+/* nav start */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 3rem;
+}
+
+.logo {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    animation: animate_grow 2s infinite;
+}
+
+
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+.menu__x {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    max-width: 72rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.book__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    font-size: 20px;
+}
+
+.hamburger-menu {
+    height: 64px;
+    width: 46px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar {
+    width: 31px;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #eee;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.bar:before {
+    transform: translateY(-9px);
+}
+.bar:after {
+    transform: translateY(9px);
+}
+
+.nike__logo {
+    transform: translate(0px, 11px);
+}
+
+.logotype {
+    width: 60px;
+    animation: animate_grow 2s infinite;
+}
+
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+/* nav end */
+
+/* main start */
+.main {
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+ 
+header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/bg_nike.jpg) no-repeat top center / cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(43, 51, 59, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay__nike {
+    max-width: 800px;
+    width: 100%;
+}
+
+.overlay__title {
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    animation: animate_grow 2s infinite;
+}
+
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+.title {
+    font-size: 2.7rem;
+}
+
+.header__txt{
+    margin-bottom: 25px;
+}
+
+.btn {
+   margin-top: 1rem;
+   padding: 0.6rem 1.8rem;
+   background-color: #1179e7;
+   border: none;
+   border-radius: 25px;
+   color: #fff;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+/* main end */
+
+/* book animation start */
+.book.active .bar {
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.book.active .bar::before {
+    transform: translateY(0) rotate(45deg);
+}
+.book.active .bar::after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.book.active .main {
+    animation: main-animation 0.5s ease;
+    cursor: pointer;
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+    }
+}
+
+/* book animation end */
+
+
+/* links start */
+.links {
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide 0.5s forwards ease ;
+}
+
+.links a:hover {
+    color: rgb(143, 131, 116);
+}
+
+.book.active .links a {
+    animation: appear 0.5s forwards ease var(--i)
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* links end */
+
+/* shadow start */
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: 0.5;
+    background: white;
+}
+
+.shadow.one {
+    z-index: -1;
+    opacity: 0.15;
+    transition: 0.5s;
+}
+.shadow.two {
+    z-index: -2;
+    opacity: 0.1;   
+}
+
+.book.active .shadow.one {
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+}
+
+@keyframes shadow-one {
+   0% {
+       transform: translate(0);
+   }
+  
+   5%{
+      transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+   }
+
+   100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+   }
+}
+.book.active .shadow.two {
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two {
+   0% {
+       transform: translate(0);
+   }
+  
+   20%{
+      transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+   }
+
+   100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+   }
+}
+
+.book.active .main:hover + .shadow.one {
+    transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
+}
+.book.active .main:hover {
+    transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+}
+/* shadow end */
+
+/* main nav start */
+.main__container {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main__nav{
+    background:#292929; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.main__list{
+    display: flex;
+}
+.main__link{
+    color: #FFF;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+    font-family: cursive;
+}
+
+.main__link:hover {
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.main__link::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    bottom: 0; 
+    transition: 400ms; 
+}
+
+.main__link:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.589);
+}
+
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+}
+/* main nav end */
+
+/* slider start */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: grey;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: grey;
+}
+/* slider end */
+
+/* nike start */
+
+section {
+    background: #000;
+}
+
+.babel__container {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+}
+
+.box {
+    position: relative;
+    width: 275px;
+    height: 350px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+} 
+
+.box::before {
+    content: 'NIKE';
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+}
+.box::after {
+    content: 'T-shirt';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover::before,
+.box:hover:after {
+    opacity: 0.04;
+}
+ .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-family: cursive;
+}
+
+ .box:hover .name {
+    top: 40px;
+    opacity: 1;
+}
+ .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50px,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+ .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 170px;
+    width: 100%;
+    z-index: 111;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,60px) ;
+}
+
+
+     .box:hover .product {
+        transform: translate3d(-50%,-50%,100px) ;
+    }
+
+ .box:nth-child(1) .circle,
+ .box:nth-child(1) .buy{
+    background: #1f961f;
+}
+ .box:nth-child(2) .circle,
+ .box:nth-child(2) .buy{
+    background: #741c06;
+}
+ .box:nth-child(3) .circle,
+ .box:nth-child(3) .buy{
+    background: #9986862c;
+}
+ .box:nth-child(4) .circle,
+ .box:nth-child(4) .buy{
+    background: #eeea04;
+}
+ .box:nth-child(5) .circle,
+ .box:nth-child(5) .buy{
+    background: #dedfe4;
+}
+ .box:nth-child(6) .circle,
+ .box:nth-child(6) .buy{
+    background: #523dad;
+}
+
+.nike__title {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    padding: 60px 0 60px 0;
+    opacity: 0.4;
+    font-family: cursive;
+}
+/* nike end */
+
+
+/* nike shoes start */
+
+.shoes__container {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    
+}
+
+.shoes__img {
+    max-width: 300px;
+    width: 100%; 
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.card:nth-child(2)::before {
+    background: rgb(196, 13, 13);
+}
+.card:nth-child(3)::before {
+    background: rgb(218, 238, 35);
+}
+.card:nth-child(4)::before {
+    background: rgb(14, 180, 158);
+}
+.card:nth-child(5)::before {
+    background: rgb(13, 197, 13);
+}
+.card:nth-child(6)::before  {
+    background: rgb(9, 8, 78);
+}
+
+.card::after {
+    content: 'Nike';
+    position: absolute;
+    top: 40%;
+    left: -14%;
+    font-size: 11em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255,0.04);
+    font-family: sans-serif;
+}
+
+.card:hover::before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    z-index: 999;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.card:hover .img {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.img img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-25deg);
+}
+
+.contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.card:hover .contentBx {
+    height: 210px;
+}
+
+.content__title {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: cursive;
+}
+
+.size, .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .size {
+  opacity: 1; 
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.card:hover .color {
+  opacity: 1; 
+  visibility: visible;
+  transition-delay: 0.7s;
+}
+
+.size__title, .color__title {
+color: #fff;
+font-weight: 300;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-right: 10px;
+}
+
+.size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.size span:hover {
+    background: #9bdc28;
+}
+
+.color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.color span:nth-child(2){
+    background: #9dbc28;
+}
+.color span:nth-child(3){
+    background: #03a9f4;
+}
+.color span:nth-child(4){
+    background: #e91e63;
+}
+
+ .buys {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #9dbc28;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+
+.card:hover .buys {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* nike shoes end */

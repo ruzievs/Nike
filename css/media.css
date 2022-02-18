@@ -1,0 +1,362 @@
+/* @media (max-width:1440px) {} */
+/* @media (max-width:1366px) {} */
+/* @media (max-width:1320px) {} */
+/* @media (max-width:1290px) {} */
+/* @media (max-width:1040px) {} */
+/* @media (max-width:1024px) {} */
+/* @media (max-width:992px) {} */
+@media (max-width:850px) {
+    .overlay__title {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 250px;
+        height: 340px;
+    }
+
+    .shoes__img {
+        max-width: 225px;
+        width: 100%;
+    }
+
+    .img img {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+
+    .shoes__img {
+        max-width: 225px;
+        width: 100%;
+    }
+
+    .buys {
+        padding: 6px 18px;
+        font-size: 10px;
+    }
+
+    .card:hover .buys {
+        transform: translateY(60px);
+        font-size: 10px;
+    }
+
+    .card:hover .color {
+        transform: translateY(60px);
+    }
+
+    .card:hover .size {
+        transform: translateY(60px);
+    }
+
+    .content__title {
+        transform: translateY(40px);
+        font-size: 15px;
+    }
+
+    .card::before {
+        clip-path: circle(140px at 90% 15%);
+    }
+
+    .size__title,
+    .color__title {
+        font-size: 12px;
+    }
+
+    .size span {
+        width: 20px;
+        height: 23px;
+        font-size: 12px;
+    }
+
+    .color span {
+        width: 16px;
+        height: 16px;
+    }
+
+    .card::after {
+        top: 51%;
+        left: -6%;
+        font-size: 8em;
+    }
+
+    .box {
+        width: 230px;
+        height: 320px;
+    }
+
+    .product {
+        max-width: 140px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .buy {
+        padding: 9px 16px;
+        font-size: 12px;
+        transform: translate3d(-38px, 0, 75px);
+    }
+
+    .box::before {
+        font-size: 4em;
+    }
+
+    .box::after {
+        font-size: 3em;
+    }
+
+    .main__cards {
+        justify-content: space-around
+    }
+
+
+}
+
+/* @media (max-width:768px) {} */
+@media (max-width:736px) {
+    .book.active .links {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 5;
+    }
+}
+/* @media (max-width:734px) {} */
+/* @media (max-width:684px) {} */
+@media (max-width:667px) {
+    .box {
+        width: 190px;
+        height: 270px;
+    }
+
+    .product {
+        max-width: 120px;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .buy {
+        padding: 6px 14px;
+        font-size: 10px;
+        transform: translate3d(-30px, 0, 75px);
+    }
+
+    .box::before {
+        font-size: 3em;
+    }
+
+    .box::after {
+        font-size: 3em;
+    }
+
+    .box:hover .name {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 210px;
+        height: 300px;
+    }
+
+    .shoes__img {
+        max-width: 205px;
+        width: 100%;
+    }
+
+    .card:hover::before {
+        clip-path: circle(220px at 80% -25%);
+    }
+
+    .card:hover .color {
+        transform: translateY(70px);
+    }
+
+    .card:hover .size {
+        transform: translateY(70px);
+    }
+
+    .content__title {
+        transform: translateY(62px);
+        font-size: 14px;
+    }
+
+    .links a {
+        font-size: 12px;
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .main__link {
+        padding: 22px 16px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .box {
+        width: 100px;
+        height: 130px;
+        border-radius: 10px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        transform: translate3d(-50%, -50%, 20px);
+    }
+
+    .product {
+        max-width: 72px;
+    }
+
+    .buy {
+        padding: 3px 10px;
+        font-size: 7px;
+        transform: translate3d(-25px, 22px, 75px);
+    }
+
+    .box:hover .name {
+        font-size: 8px;
+        top: 12px;
+    }
+
+    .box::before {
+        font-size: 30px;
+        top: 0px;
+        left: 6px;
+    }
+
+    .box::after {
+        font-size: 20px;
+        top: 96px;
+        left: 9px;
+    }
+
+    .card {
+        width: 130px;
+        height: 180px;
+    }
+
+    .shoes__img {
+        max-width: 90px;
+        width: 100%;
+    }
+
+    .img img {
+        transform: translate(-50%, -100%) rotate(-25deg);
+    }
+
+    .card::before {
+        clip-path: circle(78px at 79% 15%);
+        transition: 0.5s cubic-bezier(0.42, 0, 0, 1.35);
+    }
+
+    .content__title {
+        transform: translateY(140px);
+        font-size: 8px;
+    }
+
+    .size__title,
+    .color__title {
+        font-size: 6px;
+    }
+
+
+    .size span {
+        width: 8px;
+        height: 8px;
+        font-size: 6px;
+        line-height: 1.5;
+    }
+
+    .card:hover .buys {
+        transform: translateY(112px);
+        font-size: 6px;
+    }
+
+    .color span {
+        width: 8px;
+        height: 7px;
+    }
+
+    .card:hover .color {
+        transform: translateY(125px);
+    }
+
+    .card:hover .size {
+        transform: translateY(135px);
+    }
+
+    .card::after {
+        top: 65%;
+        left: 8%;
+        font-size: 3em;
+    }
+
+    .nike__title {
+        font-size: 30px;
+    }
+
+    .bar:before, .bar:after {
+        width: 26px;
+    }
+    .hamburger-menu{
+        height: 65px;
+        width: 26px;
+    }
+}
+
+@media (max-width:414px) {
+    .overlay__title {
+        font-size: 22px;
+    }
+}
+/* @media (max-width:412px) {} */
+@media (max-width:375px) {
+
+    .overlay__title {
+        font-size: 18px;
+    }
+    .card {
+        width: 110px;
+        height: 145px;
+    }
+
+    .card:hover .size {
+        opacity: 0;
+    }
+    .card:hover .color {
+        opacity: 0;
+    }
+    .img img {
+        transform: translate(-50%, -120%) rotate(-25deg);
+    }
+    .content__title {
+        transform: translateY(162px);
+    }
+    .logotype {
+        width: 40px;
+    }
+    .main__link {
+        padding: 18px 8px;
+        font-size: 10px;
+    }
+}
+
+/* @media (max-width:360px) {} */
+/* @media (max-width:320px) {} */
