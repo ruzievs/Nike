@@ -881,35 +881,6 @@ margin-right: 10px;
 }
 /* nike shoes end */
 
-/* footer start */
-.foots {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.foot__title {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--title-hover);
-    margin: 40px 0 10px 0;
-
-}
-
-.foot__txt {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--title-hover);
-    margin-bottom: 40px;
-}
-
-.foot__btn {
-    background: var(--btn-linkhover);
-}
-
-/* footer end */
-
 /* recommend start */
 
 .footer__container {
@@ -941,20 +912,24 @@ margin-right: 10px;
     color: #fff;
 }
 
+.recommend__item:hover .recommend__icon {
+    color: #fff;
+}
 .recommend__link {
     font-size: 14px;
-    color: #7c7676;;
+    color: #7c7676;
     margin-bottom: 10px;
     transition: .5s;
 }
 
-.recommend__link:hover {
+.recommend__item:hover .recommend__link {
     color: #fff;
 }
 
 .recommend__item {
     display: flex;
     margin-bottom: 10px;
+    transition: .5s;
 }
 
 .recommend__icon {
