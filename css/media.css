@@ -112,8 +112,17 @@
     .main__cards {
         justify-content: space-around
     }
+    
+    .recommend__link {
+        font-size: 10px;
+    }
 
-
+    .recommend__title {
+        font-size: 12px;
+    }
+    .recommend__item {
+        display: block;
+    }
 }
 
 /* @media (max-width:768px) {} */
@@ -122,7 +131,7 @@
         width: 100%;
         height: 100%;
         background: #000;
-        z-index: 5;
+        z-index: 998;
     }
 }
 /* @media (max-width:734px) {} */
@@ -203,6 +212,12 @@
     .main__link {
         padding: 22px 16px;
         font-size: 14px;
+    }
+    .recommend__item {
+        margin-bottom: 6px;
+    }
+    .recommend__title {
+        margin: 0px 23px 8px 0;
     }
 
 }
@@ -319,6 +334,19 @@
         height: 65px;
         width: 26px;
     }
+    .recommend__title {
+        margin: 0px 0px 4px 0;
+        font-size: 9px;
+    }
+    .recommend__link {
+        font-size: 7px;
+    }
+    .recommend{
+        padding-bottom: 20px;
+    }
+    .recommends {
+        padding: 24px 0 0 0;
+    }
 }
 
 @media (max-width:414px) {
@@ -355,6 +383,12 @@
     .main__link {
         padding: 18px 8px;
         font-size: 10px;
+    }
+    .recommend__title {
+        font-size: 7px;
+    }
+    .recommend__link {
+        font-size: 5px;
     }
 }
 
