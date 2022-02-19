@@ -431,7 +431,7 @@ header {
     justify-content: center;
     position: relative;
     transition: 0.5s;
-    font-family: cursive;
+    font-family: inherit;
 }
 
 .main__link:hover {
@@ -572,7 +572,7 @@ section {
     transition: 0.5s;
     opacity: 0;
     z-index: 10;
-    font-family: cursive;
+    font-family: inherit;
 }
 
  .box:hover .name {
@@ -664,7 +664,7 @@ section {
     font-size: 45px;
     padding: 60px 0 60px 0;
     opacity: 0.4;
-    font-family: cursive;
+    font-family: inherit;
 }
 /* nike end */
 
@@ -787,7 +787,7 @@ section {
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
-    font-family: cursive;
+    font-family: inherit;
 }
 
 .size, .color {
@@ -833,7 +833,7 @@ margin-right: 10px;
     transition: 0.5s;
     border-radius: 4px;
     cursor: pointer;
-    font-family: cursive;
+    font-family: inherit;
 }
 
 .size span:hover {
